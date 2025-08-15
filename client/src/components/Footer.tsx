@@ -62,11 +62,11 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center space-x-2">
                 <Phone className="text-sm" />
-                <span data-testid="text-footer-phone">0113866115</span>
+                <span data-testid="text-footer-phone">0759210709</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MessageCircle className="text-sm" />
-                <span data-testid="text-footer-whatsapp">0759210709</span>
+                <span data-testid="text-footer-whatsapp">0112339102</span>
               </li>
             </ul>
           </div>
