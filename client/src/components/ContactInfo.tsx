@@ -25,7 +25,7 @@ export const ContactInfo: React.FC = () => {
                 Call Us
               </h4>
               <p className="text-gray-600 dark:text-gray-300" data-testid="text-phone-number">
-                0113866115
+                0759210709
               </p>
             </div>
           </a>
