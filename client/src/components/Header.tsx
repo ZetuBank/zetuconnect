@@ -9,8 +9,13 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-r from-zetu-primary to-zetu-secondary rounded-xl flex items-center justify-center">
-              <span className="text-2xl">🛜</span>
+            <div className="w-12 h-12 rounded-xl overflow-hidden bg-white shadow-lg">
+              <img 
+                src="https://iili.io/FDVcn4I.jpg" 
+                alt="Zetu Logo" 
+                className="w-full h-full object-cover"
+                data-testid="img-logo"
+              />
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white" data-testid="text-brand-name">

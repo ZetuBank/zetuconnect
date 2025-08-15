@@ -8,8 +8,13 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-zetu-primary to-zetu-secondary rounded-lg flex items-center justify-center">
-                <span className="text-xl">🛜</span>
+              <div className="w-10 h-10 rounded-lg overflow-hidden bg-white shadow-lg">
+                <img 
+                  src="https://iili.io/FDVcn4I.jpg" 
+                  alt="Zetu Logo" 
+                  className="w-full h-full object-cover"
+                  data-testid="img-footer-logo"
+                />
               </div>
               <h3 className="text-xl font-bold" data-testid="text-footer-brand">Zetu</h3>
             </div>
