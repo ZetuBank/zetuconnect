@@ -3,7 +3,7 @@ import { Header } from '@/components/Header';
 import { HeroSection } from '@/components/HeroSection';
 import { ServiceFeatures } from '@/components/ServiceFeatures';
 import { ContactInfo } from '@/components/ContactInfo';
-import { PaymentPortal } from '@/components/PaymentPortal';
+import { PaymentSection } from '@/components/PaymentSection';
 import { AdditionalServices } from '@/components/AdditionalServices';
 import { Footer } from '@/components/Footer';
 
@@ -48,8 +48,8 @@ export default function Home() {
             <ContactInfo />
           </div>
 
-          {/* Secure Payment Portal */}
-          <PaymentPortal />
+          {/* Secure Payment Section */}
+          <PaymentSection />
         </div>
       </div>
 
