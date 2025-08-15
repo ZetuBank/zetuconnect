@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <MessageCircle className="text-sm" />
-                <span data-testid="text-footer-whatsapp">0112339102</span>
+                <span data-testid="text-footer-whatsapp">0759210709</span>
               </li>
             </ul>
           </div>
