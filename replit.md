@@ -5,6 +5,9 @@ This is a modern React-based internet service provider website for "Zetu", built
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Default color theme: Sunset (orange gradient)
+Default font family: Source Sans Pro
+Loading screen: 8-second animated loader with Zetu branding before app loads
 
 # System Architecture
 

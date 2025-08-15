@@ -1,0 +1,178 @@
+Set this as a launch loader to load for 8 seconds before the app opens...even if the user refreshes the page the loader should load for 8 seconds 
+
+
+
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zetu 🛜 </title>
+<style>
+  :root {
+    --theme-primary: #6366F1;
+    --theme-secondary: #10B981;
+  }
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--theme-primary);
+  }
+  .loader-overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(to bottom right, var(--theme-primary), var(--theme-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    color: white;
+    text-align: center;
+  }
+  .loader-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    animation: pulse 1.5s infinite;
+  }
+  .loader-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+  }
+  .loader-wrapper {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 2rem;
+  }
+  .ring {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+  }
+  .ring1 {
+    inset: 0;
+    border-width: 4px;
+    border-color: rgba(255,255,255,0.2);
+  }
+  .ring2 {
+    inset: 0;
+    border-width: 4px;
+    border-color: transparent;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+  }
+  .ring3 {
+    inset: 0.5rem;
+    border-width: 4px;
+    border-color: rgba(255,255,255,0.2);
+  }
+  .ring4 {
+    inset: 0.5rem;
+    border-width: 4px;
+    border-color: transparent;
+    border-right-color: white;
+    animation: spin 2s linear infinite;
+  }
+  .ring5 {
+    inset: 1rem;
+    border-width: 4px;
+    border-color: rgba(255,255,255,0.2);
+  }
+  .ring6 {
+    inset: 1rem;
+    border-width: 4px;
+    border-color: transparent;
+    border-bottom-color: white;
+    animation: bounceSpin 2s ease-in-out infinite;
+  }
+  .center-circle {
+    position: absolute;
+    inset: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .center-circle svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    animation: pulse 1.5s infinite;
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+  }
+  .dot:nth-child(2) { animation-delay: 0.1s; }
+  .dot:nth-child(3) { animation-delay: 0.2s; }
+  .loader-footer {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    opacity: 0.75;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes bounceSpin {
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(180deg) translateY(-5px); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  @keyframes bounce {
+    to { transform: translateY(-6px); }
+  }
+</style>
+</head>
+<body>
+
+<div class="loader-overlay">
+  <div>
+    <h1 class="loader-title">Zetu🛜</h1>
+    <p class="loader-subtitle">Fast, Reliable, Affordable</p>
+
+    <div class="loader-wrapper">
+      <div class="ring ring1"></div>
+      <div class="ring ring2"></div>
+      <div class="ring ring3"></div>
+      <div class="ring ring4"></div>
+      <div class="ring ring5"></div>
+      <div class="ring ring6"></div>
+      <div class="center-circle">
+        <!-- Shield Icon (Lucide SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 22c-4.418 0-8-3.582-8-8V5.333L12 2l8 3.333V14c0 4.418-3.582 8-8 8z"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
+    <p class="loader-footer">Only KES 1,000 per month - best value in Kenya...</p>
+  </div>
+</div>
+
+
+
+Let sunset be default color theme and source sans pro be default font family
+
+
+Use the loader above but for colors use my app colors

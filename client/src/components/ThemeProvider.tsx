@@ -29,8 +29,8 @@ export const useTheme = () => {
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [themeMode, setThemeModeState] = useState<ThemeMode>('light');
-  const [colorTheme, setColorThemeState] = useState<ColorTheme>('ocean');
-  const [fontFamily, setFontFamilyState] = useState<FontFamily>('font-inter');
+  const [colorTheme, setColorThemeState] = useState<ColorTheme>('sunset');
+  const [fontFamily, setFontFamilyState] = useState<FontFamily>('font-source-sans');
   const [fontSize, setFontSizeState] = useState<FontSize>('text-base');
 
   // Load preferences from localStorage
@@ -119,8 +119,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     localStorage.removeItem('zetu-font-family');
     localStorage.removeItem('zetu-font-size');
     setThemeModeState('light');
-    setColorThemeState('ocean');
-    setFontFamilyState('font-inter');
+    setColorThemeState('sunset');
+    setFontFamilyState('font-source-sans');
     setFontSizeState('text-base');
   };
 
